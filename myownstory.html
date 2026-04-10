@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUSE | Nena</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#f5f7fb;
+--card:#ffffff;
+--text:#2c2c2c;
+--accent:#6a85f1;
+}
+body.dark{
+--bg:#0f1220;
+--card:#1b1f36;
+--text:#eaeaf0;
+}
+body{
+margin:0;
+font-family:'Nunito',sans-serif;
+background:var(--bg);
+color:var(--text);
+transition:0.4s;
+}
+.app{
+max-width:420px;
+margin:auto;
+min-height:100vh;
+background:var(--card);
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 40px rgba(0,0,0,0.2);
+}
+header{
+padding:20px;
+text-align:center;
+background:linear-gradient(135deg,#6a85f1,#8fd3f4);
+color:white;
+}
+.toggle{
+position:absolute;
+right:15px;
+top:15px;
+cursor:pointer;
+}
+.nav{
+display:flex;
+overflow:auto;
+padding:10px;
+gap:8px;
+}
+.nav button{
+border:none;
+padding:8px 12px;
+border-radius:20px;
+cursor:pointer;
+background:#eee;
+}
+.nav button.active{background:var(--accent);color:white;}
+.content{padding:20px;position:relative;}
+.chapter{display:none;animation:flip 0.5s;}
+.chapter.active{display:block;}
+@keyframes flip{
+from{transform:rotateY(90deg);opacity:0}
+to{transform:rotateY(0);opacity:1}
+}
+p{font-size:0.9em;line-height:1.8}
+.comment-box{margin-top:20px}
+textarea{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  background:#f1f1f1;
+  color:#000;
+}
+body.dark textarea{
+  background:#2a2f4a;
+  color:#fff;
+}
+.comments p{
+  background:#eee;
+  padding:8px;
+  border-radius:8px;
+}
+body.dark .comments p{
+  background:#2a2f4a;
+  color:#fff;
+}
+button.post{margin-top:10px;padding:8px 12px;border:none;border-radius:10px;background:var(--accent);color:white}
+.comments p{background:#eee;padding:8px;border-radius:8px}
+.footer{text-align:center;font-size:0.7em;padding:15px}
+.bg-anime{
+position:absolute;opacity:0.05;top:0;left:0;width:100%;height:100%;background:url('https://i.imgur.com/8Km9tLL.png');background-size:cover;
+}
+</style>
+</head>
+<body>
+<!-- removed stray text --><div class="app">
+<header>
+<div class="toggle" onclick="toggleDark()">🌙</div>
+<h2>Whispers of Nena</h2>
+</header><div class="nav" id="nav"></div><div class="content">
+<div class="bg-anime"></div><div class="chapter active">
+<p>A girl was sitting quietly at her desk in the classroom, looking at the blackboard. The teacher walked in and told everyone to take out their homework. She quickly started checking her bag, her heart beating fast.</p>
+<p>She searched faster, going through her books and papers, but she couldn’t find her notebook. Panic started to grow inside her. She had done the homework last night, but now she had forgotten to bring it.</p>
+<p>Before she could respond, her name was called. The teacher asked, “Have you done your homework?” and told her to stand up in front of the whole class. She felt frozen, like she couldn’t move or speak. Her chest tightened, and then she heard a soft voice inside her, calling…</p>
+<p>“Nena… Nena…”</p>
+<p>Suddenly, she woke up.</p>
+</div><div class="chapter">
+<p>Her eyes opened to the sound of her mother’s voice from the kitchen, “Nena, come have your breakfast! You’re going to be late for school again!” She sat up in bed, breathing slowly. It was just a dream.</p>
+<p>Nena looked at the photo on her bedside table. It was her father, smiling in his favorite blue shirt. She touched the photo gently, then closed her eyes and said a small prayer for him. He had passed away during a work trip last year. But in her heart, he still felt close—like he was always there, telling her to stay strong.</p>
+<p>Now, it was just her and her mom. Her mother worked hard every day—cooking, cleaning, and doing her best to care for Nena. Even when she was tired, she always smiled. Nena and her mom had grown closer after her father passed away. They stayed strong together.</p>
+</div><div class="chapter">
+<p>Later, Nena walked down the quiet road on her way to school. A cool breeze touched her face. She looked up and saw a big wind turbine spinning slowly in the distance. There were fields all around and only a few small houses nearby. She lived in the peaceful countryside.</p>
+<p>As she crossed the old bridge, she looked into the distance and saw a train puffing smoke as it moved slowly through the hills. She smiled to herself and said, “This is so beautiful.” Moments like this made her feel peaceful. She never felt bored when nature showed her something new.</p>
+<p>As she walked down the gentle slope of the hill, she noticed a small grasshopper hopping near her feet. She stopped for a second and watched it jump through the grass. “Summer must be coming soon,” she thought with a quiet smile.</p>
+</div><div class="chapter">
+<p>As she walked through the quiet streets, Nena passed a small shop near the corner of her usual path. It was the same little place where she used to stop after school to buy candy. She remembered standing at the counter with a few coins in her hand, trying to choose between her favorite sweets. Just thinking about it made her smile.</p>
+<p>After a few moments of thinking, Nena finally picked a pink candy—the one she hadn’t had in a long time. She unwrapped it slowly, enjoying the sweet smell, but then suddenly looked at the time. “Oh no, I’m going to be late!”</p>
+<p>She quickly started running toward school, the candy still in her hand. As she turned a corner, someone bumped right into her. She almost dropped the candy. “Hey! Watch it—” she started to say, but then stopped when she saw who it was.</p>
+<p>It was one of her friends, also running and out of breath. “Looks like we’re both late!” her friend laughed. Nena laughed too. “I guess I’m not the only one today.”</p>
+<p>After that, Nena and her friend finally reached the school gate. They ran together down the hallway, laughing and gasping for breath. When they opened the classroom door, everyone turned to look at them. The room went silent. The teacher was already there. Both of them froze.</p>
+<p>“You’re late,” the teacher said with a serious look. “Go stand outside.” The two stepped back quietly and stood outside the classroom door.</p>
+<p>As soon as they were out, they started whispering and blaming each other. “This is your fault! You bumped into me!” her friend whispered. “No way! I was running because I was late—you made me drop my candy!” Nena replied, crossing her arms.</p>
+<p>They both pouted, then started laughing softly. From inside the class, the teacher’s voice called out, “Keep quiet out there!” They quickly stood straight, pretending to behave.</p>
+</div><div class="chapter">
+<p>At lunchtime, Nena’s friends invited her to eat with them. They all sat together under a tree in the schoolyard, opening their lunch boxes. When Nena opened hers, all her friends were shocked.</p>
+<p>“Wow!” one of them said. “Your lunch looks amazing!” Her mom had packed it with care—neatly arranged rice balls, fresh vegetables, and even a small fruit cut into the shape of a flower. It looked like something from a magazine.</p>
+<p>One of her friends opened her own lunch box and showed it. Inside, there were just a few slices of bread and a boiled egg. “You’re really lucky, Nena,” she said with a small smile. “Your mom always makes you such beautiful lunches.”</p>
+<p>Nena looked at her lunch, then at her friends, and felt something warm inside. She realized how much love her mom put into every meal.</p>
+<p>After that, Nena smiled and started sharing her food with her friends. They each took a little and tasted it. “This is delicious!” one of them said happily. Nena grinned proudly and said, “That’s because my mom is the world’s best cooking master!”</p>
+<p>Then, she looked at her friends’ lunch boxes and decided to try something from theirs too. She picked up a boiled egg and took a bite—but her smile quickly disappeared. Her face twisted in surprise. The egg wasn’t fully cooked. She didn’t like half-boiled eggs at all.</p>
+<p>Her friends saw her expression and burst out laughing. “You look like you just ate a lemon!” one of them joked. Even Nena laughed, shaking her head. “Next time, I’m bringing extra rice balls for everyone!”</p>
+</div><div class="chapter">
+<p>After lunch, the teacher called everyone back into the classroom. The students quickly gathered, wondering what the announcement was about. The teacher smiled and said, “I have good news! Summer vacation will start next week. And before that… the school is planning a class trip to the beach!”</p>
+<p>The whole room filled with cheers and happy voices. Everyone was excited, talking about swimsuits, snacks, and playing in the water.</p>
+<p>Nena’s eyes lit up. A beach trip? She felt a wave of joy in her chest. She loved going on trips, but she hadn’t been on one since her father passed away. For the first time in a long while, she felt excited about something new. She smiled to herself and thought, “This is going to be special.”</p>
+</div><div class="chapter">
+<p>After school ended, Nena rushed home, her bag bouncing behind her. She opened the door with a big smile and called out, “Mom! Our school is going on a summer vacation trip!”</p>
+<p>Her mother turned from the kitchen, surprised. Nena’s voice was full of excitement, but there was also something soft in it—something emotional.</p>
+<p>She walked up to her mother and said quietly, “I haven’t been on a trip since Dad passed away.”</p>
+<p>For a moment, both of them were silent. Her mother gave her a gentle smile and hugged her.</p>
+<p>Then, trying to lighten the mood, her mom said, “Alright, alright. Come on, dinner is ready.” Nena’s eyes lit up again. She rushed toward the dining table, but her mom quickly added, “First, go take a shower.” Nena stopped and groaned playfully. “Okay, okay!”</p>
+</div><div class="chapter">
+<p><b>To Be Continued...</b></p>
+</div></div><div class="footer">LISENCE BY MUSE</div>
+</div><script>
+// create buttons dynamically (fixes mobile editor issues)
+const nav = document.getElementById('nav');
+const totalChapters = document.querySelectorAll('.chapter').length;
+
+for(let i=0;i<totalChapters;i++){
+  let btn = document.createElement('button');
+  btn.innerText = (i===totalChapters-1)?'End':(i+1);
+  btn.onclick = ()=> showChapter(i);
+  nav.appendChild(btn);
+}
+
+function showChapter(index){
+  const chapters = document.querySelectorAll('.chapter');
+  const buttons = document.querySelectorAll('.nav button');
+
+  chapters.forEach((c,i)=>{
+    c.style.display = (i===index)?'block':'none';
+  });
+
+  buttons.forEach((b,i)=>{
+    b.classList.toggle('active', i===index);
+  });
+}
+
+// init
+window.onload = function(){
+  showChapter(0);
+  renderComments();
+}
+
+function toggleDark(){
+  document.body.classList.toggle('dark');
+}
+
+function addComment(){
+  let text=document.getElementById('comment').value.trim();
+  if(!text) return;
+
+  let comments=JSON.parse(localStorage.getItem('comments')||'[]');
+  comments.push(text);
+  localStorage.setItem('comments',JSON.stringify(comments));
+
+  renderComments();
+  document.getElementById('comment').value='';
+}
+
+function renderComments(){
+  let container=document.getElementById('comments');
+  if(!container) return;
+  container.innerHTML='';
+
+  let comments=JSON.parse(localStorage.getItem('comments')||'[]');
+  comments.forEach(c=>{
+    let p=document.createElement('p');
+    p.innerText=c;
+    container.appendChild(p);
+  });
+}
+</script></body>
+</html>
